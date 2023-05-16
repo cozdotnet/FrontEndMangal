@@ -1,0 +1,19 @@
+<h1>Welcome to your Home Page</h1>
+
+<!-- Expense tracking form -->
+<form>
+  <label for="expense">Expense:</label>
+  <input type="text" id="expense" name="expense" [(ngModel)]="expense">
+  <button (click)="addExpense()">Add Expense</button>
+</form>
+
+<!-- Goal setting form -->
+<form>
+  <label for="goal">Goal:</label>
+  <input type="text" id="goal" name="goal" [(ngModel)]="goal">
+  <button (click)="setGoal()">Set Goal</button>
+</form>
+
+<!-- Report generation -->
+<button (click)="generateReport()">Generate Report</button>
+

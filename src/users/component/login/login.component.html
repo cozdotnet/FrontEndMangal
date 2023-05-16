@@ -1,0 +1,41 @@
+<section class="vh-100" style="background-image: url('assets/images/login-bg.jpg'); background-size: cover; height: 764px;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center ">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="background-color: rgba(92, 39, 182, 0.65); border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+              
+              <div class="navbar-brand mb-4">
+                  <img src="assets/images/Clogo.png" class="img-fluid" alt="Responsive image"> 
+                  <!-- <img src="assets/images/Clogo.png"  alt="Responsive image" width="90%"> -->
+              </div>
+
+            <div class="form-outline mb-4">
+              <div class="input-field">
+                <input type="text" id="typeEmailX-2" placeholder="Username" class="form-control form-control-lg">
+                <span class="fa fa-user"></span>
+              </div>
+            </div>
+
+            
+            <div class="form-outline mb-4">
+              <div class="input-field position-relative">
+                <input type="password" id="typePasswordX-2" placeholder="Password" class="form-control form-control-lg" #passwordInput>
+                <span class="fa position-absolute" [class.fa-eye-slash]="passwordHidden" [class.fa-eye]="!passwordHidden" style="right: 20px; top: 50%; transform: translateY(-50%); cursor: pointer;" (click)="togglePasswordVisibility(passwordInput)"></span>
+              </div>
+            </div>
+            
+
+            <!-- //Checkbox -->
+            <div class="form-check d-flex justify-content-start">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-labelx text-light" for="form1Example3" style="margin-left: 15px;"> Keep me signed in </label>
+            </div>    
+             <!-- //(click)="onLogin()"  -->
+            <button class="btn btn-primary btn-lg btn-block w-100" >Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
